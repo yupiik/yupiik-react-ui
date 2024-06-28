@@ -16,7 +16,9 @@
                                     "options": {
                                         "configuration": {
                                             "className": "sidebar-content js-simplebar",
-                                            "style": "background: #25282E",
+                                            "style": {
+                                                "background": "#25282E"
+                                            },
                                             "children": [
                                                 {
                                                     "name": "a",
@@ -24,7 +26,9 @@
                                                         "configuration": {
                                                             "className": "sidebar-brand",
                                                             "href": "/",
-                                                            "style": "display: flex",
+                                                            "style": {
+                                                                "display": "flex"
+                                                            },
                                                             "children": [
                                                                 {
                                                                     "name": "img",
@@ -36,11 +40,15 @@
                                                                     }
                                                                 },
                                                                 {
-                                                                    "name": "a",
+                                                                    "name": "span",
                                                                     "options": {
                                                                         "configuration": {
                                                                             "href": "#",
-                                                                            "style": "padding-top:6px;color:white;text-transform:uppercase",
+                                                                            "style": {
+                                                                                "paddingTop": "6px",
+                                                                                "color": "white",
+                                                                                "textTransform": "uppercase"
+                                                                            },
                                                                             "children": [
                                                                                 "Yupiik"
                                                                             ]

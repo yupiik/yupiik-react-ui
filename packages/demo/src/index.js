@@ -1,10 +1,9 @@
-import { FromConfiguratonHoc, simpleRegistry, nestedRegistry } from "@yupiik/react-ui-dynamic";
-import { ReactRouterRegistry } from "./router";
-import { useEffect, useState } from "react";
-import React from 'react';
+import React, { useEffect, useState } from "react";
 import ReactDOM from 'react-dom/client';
 import * as reactBootstrap from "react-bootstrap";
 import * as reactFeather from "react-feather";
+import { FromConfiguratonHoc, simpleRegistry, nestedRegistry } from "@yupiik/react-ui-dynamic";
+import { ReactRouterRegistry } from "./router";
 import { customRegistry } from './registry';
 import './app.css';
 

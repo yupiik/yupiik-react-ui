@@ -35,11 +35,14 @@ export const simpleComponent = nameOrComponent => ({
             }
             return it;
         });
-    return (
-        <Comp {...props}>
-            {subComponents}
-        </Comp>
-    );
+    if (subComponents && subComponents.length > 0) {
+        return (
+            <Comp {...props}>
+                {subComponents}
+            </Comp>
+        );
+    }
+    return (<Comp {...props} />)
 };
 
 const isComponent = it =>

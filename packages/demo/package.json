@@ -15,8 +15,8 @@
     "start": "NODE_ENV=dev DEV_JSONRPC_MOCK=$PWD/jsonrpc.mock.js node build.js"
   },
   "devDependencies": {
-    "@yupiik/react-ui-dynamic": "",
-    "@yupiik/react-ui-use-json-rpc": "",
+    "@yupiik/react-ui-dynamic": "0.0.0",
+    "@yupiik/react-ui-use-json-rpc": "0.0.0",
     "@jsonforms/react": "3.1.0",
     "@jsonforms/vanilla-renderers": "3.1.0",
     "react-bootstrap": "^2.9.1",

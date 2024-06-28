@@ -1,3 +1,4 @@
+import React from 'react';
 import { useEffect, useMemo, useReducer } from "react";
 import { Dynamic } from "./Dynamic";
 import jsonLogic from './json-logic.operators';
@@ -71,8 +72,9 @@ export const FromConfiguratonHoc = ({
             return;
         }
 
+        let result;
         if (Array.isArray(useEffectCallback)) {
-            return useEffectCallback
+            result = useEffectCallback
                 .map(it => jsonLogic.apply(it, { parentState, parentDispatch, state, dispatch }))
                 .filter(it => it)
                 .reduce((a, i) => {
@@ -83,9 +85,9 @@ export const FromConfiguratonHoc = ({
                         };
                     }
                 }, () => { });
+        } else {
+            result = jsonLogic.apply(useEffectCallback, { parentState, parentDispatch, state, dispatch });
         }
-
-        const result = jsonLogic.apply(useEffectCallback, { parentState, parentDispatch, state, dispatch });
         if (typeof result === 'function') {
             return result;
         }

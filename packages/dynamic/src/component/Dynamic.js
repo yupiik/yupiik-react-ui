@@ -1,4 +1,4 @@
-import { createContext, h } from 'react';
+import React, { createContext, useContext } from 'react';
 import { HtmlRegistry } from './registry';
 
 const getErrorComponent = (registry) => registry.error || (({ children }) => (<div className="error">{children})</div>));

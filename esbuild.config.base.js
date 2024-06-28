@@ -1,5 +1,4 @@
 const esbuild = require('esbuild');
-const path = require('path');
 const http = require('node:http');
 
 const baseConf = {
@@ -17,12 +16,8 @@ const baseConf = {
     outdir: 'dist',
     jsx: 'automatic',
     external: [
-        '@ant-design/icons',
-        '@yupiik/react-ui-dynamic',
-        'antd',
         'json-logic-js',
-        'react-bootstrap',
-        'react-feather',
+        'react'
     ],
     define: {
         'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'production'),

@@ -17,68 +17,71 @@ export const useJsonRpc = ({
     const securityContext = useContext(SecurityContext);
 
     const deps = dependencies && !dependencies.length ? dependencies : [endpoint, payload, providedData];
-    useEffect(async () => {
-        if (providedData) {
-            setData(providedData);
-            setLoading(false);
-            return;
-        }
-
-        if (needsSecurity && !securityContext) {
-            setError('You must be logged to access this page.');
-            setLoading(false);
-            return;
-        }
-
-        const onExit = () => controller.abort();
+    useEffect(() => {
         const controller = new AbortController();
-        try {
-            setLoading(true);
-            setError(undefined);
-            setData(undefined);
-
-            const headers = {
-                accept: 'application/json',
-                ...(needsSecurity ?
-                    {
-                        authorization: `Bearer ${securityContext.access_token}`,
-                    } :
-                    {}
-                ),
-                ...(fetchOptions.headers || {}),
-            };
-            const options = {
-                method: 'POST',
-                headers,
-                signal: controller.signal,
-                body: typeof payload === 'string' ? payload : JSON.stringify(payload),
-                ...fetchOptions,
-            };
-
-            const result = await fetch(endpoint, options);
-            if (result.status !== 200) {
-                setError(`Invalid response: HTTP ${result.status}`);
-                return onExit;
+        const onExit = () => controller.abort();
+        async function internal() {
+            if (providedData) {
+                setData(providedData);
+                setLoading(false);
+                return;
             }
-
-            const json = await result.json();
-            if (Array.isArray(json)) { // let the caller handle the errors for bulk
+    
+            if (needsSecurity && !securityContext) {
+                setError('You must be logged to access this page.');
+                setLoading(false);
+                return;
+            }
+    
+            try {
+                setLoading(true);
+                setError(undefined);
+                setData(undefined);
+    
+                const headers = {
+                    accept: 'application/json',
+                    ...(needsSecurity ?
+                        {
+                            authorization: `Bearer ${securityContext.access_token}`,
+                        } :
+                        {}
+                    ),
+                    ...(fetchOptions.headers || {}),
+                };
+                const options = {
+                    method: 'POST',
+                    headers,
+                    signal: controller.signal,
+                    body: typeof payload === 'string' ? payload : JSON.stringify(payload),
+                    ...fetchOptions,
+                };
+    
+                const result = await fetch(endpoint, options);
+                if (result.status !== 200) {
+                    setError(`Invalid response: HTTP ${result.status}`);
+                    return onExit;
+                }
+    
+                const json = await result.json();
+                if (Array.isArray(json)) { // let the caller handle the errors for bulk
+                    setData(json);
+                    return onExit;
+                }
+    
+                if (json.error) {
+                    setError(json.error);
+                    return onExit;
+                }
+    
                 setData(json);
-                return onExit;
+            } catch (e) {
+                setError(e);
+            } finally {
+                setLoading(false);
             }
-
-            if (json.error) {
-                setError(json.error);
-                return onExit;
-            }
-
-            setData(json);
-        } catch (e) {
-            setError(e);
-        } finally {
-            setLoading(false);
+    
+            return onExit;
         }
-
         return onExit;
     }, deps);
 
