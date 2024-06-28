@@ -1,0 +1,621 @@
+{
+    "name": "div",
+    "options": {
+        "configuration": {
+            "className": "wrapper",
+            "children": [
+                {
+                    "name": "nav",
+                    "options": {
+                        "configuration": {
+                            "id": "sidebar",
+                            "className": "sidebar js-sidebar",
+                            "children": [
+                                {
+                                    "name": "div",
+                                    "options": {
+                                        "configuration": {
+                                            "className": "sidebar-content js-simplebar",
+                                            "style": "background: #25282E",
+                                            "children": [
+                                                {
+                                                    "name": "a",
+                                                    "options": {
+                                                        "configuration": {
+                                                            "className": "sidebar-brand",
+                                                            "href": "/",
+                                                            "style": "display: flex",
+                                                            "children": [
+                                                                {
+                                                                    "name": "img",
+                                                                    "options": {
+                                                                        "configuration": {
+                                                                            "alt": "Logo",
+                                                                            "src": "//www.yupiik.io/images/favicon.png"
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "a",
+                                                                    "options": {
+                                                                        "configuration": {
+                                                                            "href": "#",
+                                                                            "style": "padding-top:6px;color:white;text-transform:uppercase",
+                                                                            "children": [
+                                                                                "Yupiik"
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                },
+                                                {
+                                                    "name": "ul",
+                                                    "options": {
+                                                        "configuration": {
+                                                            "className": "sidebar-nav",
+                                                            "children": [
+                                                                {
+                                                                    "name": "li",
+                                                                    "options": {
+                                                                        "configuration": {
+                                                                            "className": "sidebar-header",
+                                                                            "children": [
+                                                                                "Main Menu"
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                },
+                                                                {
+                                                                    "name": "li",
+                                                                    "options": {
+                                                                        "configuration": {
+                                                                            "className": "sidebar-item",
+                                                                            "children": [
+                                                                                {
+                                                                                    "name": "NavLink",
+                                                                                    "options": {
+                                                                                        "configuration": {
+                                                                                            "activeClassName": "active",
+                                                                                            "className": "sidebar-link",
+                                                                                            "href": "/home",
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "name": "Airplay",
+                                                                                                    "options": {
+                                                                                                        "configuration": {
+                                                                                                            "className": "align-middle",
+                                                                                                            "size": 18
+                                                                                                        }
+                                                                                                    }
+                                                                                                },
+                                                                                                {
+                                                                                                    "name": "span",
+                                                                                                    "options": {
+                                                                                                        "configuration": {
+                                                                                                            "className": "align-middle",
+                                                                                                            "children": [
+                                                                                                                "Home"
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                },
+                {
+                    "name": "div",
+                    "options": {
+                        "configuration": {
+                            "id": "main",
+                            "className": "main",
+                            "children": [
+                                {
+                                    "name": "div",
+                                    "options": {
+                                        "configuration": {
+                                            "className": "h-100",
+                                            "children": [
+                                                {
+                                                    "name": "ErrorBoundary",
+                                                    "options": {
+                                                        "configuration": {
+                                                            "children": [
+                                                                {
+                                                                    "name": "Router",
+                                                                    "options": {
+                                                                        "configuration": {
+                                                                            "children": [
+                                                                                {
+                                                                                    "name": "div",
+                                                                                    "options": {
+                                                                                        "wrapperProps": {
+                                                                                            "default": true
+                                                                                        },
+                                                                                        "configuration": {
+                                                                                            "children": [
+                                                                                                "Welcome on the demo application."
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "name": "div",
+                                                                                    "options": {
+                                                                                        "wrapperProps": {
+                                                                                            "path": "/home"
+                                                                                        },
+                                                                                        "configuration": {
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "name": "ul",
+                                                                                                    "options": {
+                                                                                                        "configuration": {
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "name": "li",
+                                                                                                                    "options": {
+                                                                                                                        "configuration": {
+                                                                                                                            "children": [
+                                                                                                                                "Welcome on the home page."
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "name": "li",
+                                                                                                                    "options": {
+                                                                                                                        "configuration": {
+                                                                                                                            "children": [
+                                                                                                                                "To see a form and how it can be sumitted fo on ",
+                                                                                                                                {
+                                                                                                                                    "name": "NavLink",
+                                                                                                                                    "options": {
+                                                                                                                                        "configuration": {
+                                                                                                                                            "href": "/form",
+                                                                                                                                            "children": [
+                                                                                                                                                "form"
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                },
+                                                                                                                                " page,"
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "name": "li",
+                                                                                                                    "options": {
+                                                                                                                        "configuration": {
+                                                                                                                            "children": [
+                                                                                                                                "To see how to initialize data from a remote call go on ",
+                                                                                                                                {
+                                                                                                                                    "name": "NavLink",
+                                                                                                                                    "options": {
+                                                                                                                                        "configuration": {
+                                                                                                                                            "href": "/init",
+                                                                                                                                            "children": [
+                                                                                                                                                "init"
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                },
+                                                                                                                                " page."
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "name": "div",
+                                                                                    "options": {
+                                                                                        "wrapperProps": {
+                                                                                            "path": "/form"
+                                                                                        },
+                                                                                        "configuration": {
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "name": "Form",
+                                                                                                    "options": {
+                                                                                                        "configuration": {
+                                                                                                            "jsonRpcMethod": "demo.form.submit",
+                                                                                                            "needsSecurity": false,
+                                                                                                            "successMessage": "Simple form submitted with success.",
+                                                                                                            "schema": {
+                                                                                                                "type": "object",
+                                                                                                                "properties": {
+                                                                                                                    "name": {
+                                                                                                                        "type": "string",
+                                                                                                                        "minLength": 3,
+                                                                                                                        "description": "Please enter your name"
+                                                                                                                    },
+                                                                                                                    "vegetarian": {
+                                                                                                                        "type": "boolean"
+                                                                                                                    },
+                                                                                                                    "birthDate": {
+                                                                                                                        "type": "string",
+                                                                                                                        "format": "date"
+                                                                                                                    },
+                                                                                                                    "nationality": {
+                                                                                                                        "type": "string",
+                                                                                                                        "enum": [
+                                                                                                                            "DE",
+                                                                                                                            "IT",
+                                                                                                                            "JP",
+                                                                                                                            "US",
+                                                                                                                            "RU",
+                                                                                                                            "Other"
+                                                                                                                        ]
+                                                                                                                    },
+                                                                                                                    "personalData": {
+                                                                                                                        "type": "object",
+                                                                                                                        "properties": {
+                                                                                                                            "age": {
+                                                                                                                                "type": "integer",
+                                                                                                                                "description": "Please enter your age."
+                                                                                                                            },
+                                                                                                                            "height": {
+                                                                                                                                "type": "number"
+                                                                                                                            },
+                                                                                                                            "drivingSkill": {
+                                                                                                                                "type": "number",
+                                                                                                                                "maximum": 10,
+                                                                                                                                "minimum": 1,
+                                                                                                                                "default": 7
+                                                                                                                            }
+                                                                                                                        },
+                                                                                                                        "required": [
+                                                                                                                            "age",
+                                                                                                                            "height"
+                                                                                                                        ]
+                                                                                                                    },
+                                                                                                                    "occupation": {
+                                                                                                                        "type": "string"
+                                                                                                                    },
+                                                                                                                    "postalCode": {
+                                                                                                                        "type": "string",
+                                                                                                                        "maxLength": 5
+                                                                                                                    }
+                                                                                                                },
+                                                                                                                "required": [
+                                                                                                                    "occupation",
+                                                                                                                    "nationality"
+                                                                                                                ]
+                                                                                                            },
+                                                                                                            "uischema": {
+                                                                                                                "type": "VerticalLayout",
+                                                                                                                "elements": [
+                                                                                                                    {
+                                                                                                                        "type": "HorizontalLayout",
+                                                                                                                        "elements": [
+                                                                                                                            {
+                                                                                                                                "type": "Control",
+                                                                                                                                "scope": "#/properties/name"
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "type": "Control",
+                                                                                                                                "scope": "#/properties/personalData/properties/age"
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "type": "Control",
+                                                                                                                                "scope": "#/properties/birthDate"
+                                                                                                                            }
+                                                                                                                        ]
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "type": "Label",
+                                                                                                                        "text": "Additional Information"
+                                                                                                                    },
+                                                                                                                    {
+                                                                                                                        "type": "HorizontalLayout",
+                                                                                                                        "elements": [
+                                                                                                                            {
+                                                                                                                                "type": "Control",
+                                                                                                                                "scope": "#/properties/personalData/properties/height"
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "type": "Control",
+                                                                                                                                "scope": "#/properties/nationality"
+                                                                                                                            },
+                                                                                                                            {
+                                                                                                                                "type": "Control",
+                                                                                                                                "scope": "#/properties/occupation",
+                                                                                                                                "suggestion": [
+                                                                                                                                    "Accountant",
+                                                                                                                                    "Engineer",
+                                                                                                                                    "Freelancer",
+                                                                                                                                    "Journalism",
+                                                                                                                                    "Physician",
+                                                                                                                                    "Student",
+                                                                                                                                    "Teacher",
+                                                                                                                                    "Other"
+                                                                                                                                ]
+                                                                                                                            }
+                                                                                                                        ]
+                                                                                                                    }
+                                                                                                                ]
+                                                                                                            }
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                },
+                                                                                {
+                                                                                    "name": "div",
+                                                                                    "options": {
+                                                                                        "wrapperProps": {
+                                                                                            "path": "/init"
+                                                                                        },
+                                                                                        "configuration": {
+                                                                                            "children": [
+                                                                                                {
+                                                                                                    "name": "JsonRpcDataLoader",
+                                                                                                    "options": {
+                                                                                                        "configuration": {
+                                                                                                            "hookProps": {
+                                                                                                                "payload": {
+                                                                                                                    "jsonrpc": "2.0",
+                                                                                                                    "method": "demo.init"
+                                                                                                                },
+                                                                                                                "needsSecurity": false
+                                                                                                            },
+                                                                                                            "wrapperConfiguration": {
+                                                                                                                "name": "div",
+                                                                                                                "props": {
+                                                                                                                    "className": "init-wrapper"
+                                                                                                                }
+                                                                                                            },
+                                                                                                            "children": [
+                                                                                                                {
+                                                                                                                    "name": "p",
+                                                                                                                    "options": {
+                                                                                                                        "configuration": {
+                                                                                                                            "children": [
+                                                                                                                                "This page will load some data from a JSON-RPC call then show it under this text:"
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "name": "Conditional",
+                                                                                                                    "options": {
+                                                                                                                        "configuration": {
+                                                                                                                            "condition": {
+                                                                                                                                "jsonLogic": {
+                                                                                                                                    "var": "props.loading"
+                                                                                                                                }
+                                                                                                                            },
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "name": "div",
+                                                                                                                                    "options": {
+                                                                                                                                        "configuration": {
+                                                                                                                                            "className": "loader",
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "name": "Placeholder",
+                                                                                                                                                    "options": {
+                                                                                                                                                        "configuration": {
+                                                                                                                                                            "xs": 6
+                                                                                                                                                        }
+                                                                                                                                                    }
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "name": "Placeholder",
+                                                                                                                                                    "options": {
+                                                                                                                                                        "configuration": {
+                                                                                                                                                            "xs": 6
+                                                                                                                                                        }
+                                                                                                                                                    }
+                                                                                                                                                },
+                                                                                                                                                {
+                                                                                                                                                    "name": "Placeholder",
+                                                                                                                                                    "options": {
+                                                                                                                                                        "configuration": {
+                                                                                                                                                            "xs": 6
+                                                                                                                                                        }
+                                                                                                                                                    }
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "name": "Conditional",
+                                                                                                                    "keepExtendedProps": true,
+                                                                                                                    "options": {
+                                                                                                                        "configuration": {
+                                                                                                                            "condition": {
+                                                                                                                                "jsonLogic": {
+                                                                                                                                    "and": [
+                                                                                                                                        {
+                                                                                                                                            "!=": [
+                                                                                                                                                "props.loading",
+                                                                                                                                                true
+                                                                                                                                            ]
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "var": "props.error"
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            },
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "name": "div",
+                                                                                                                                    "options": {
+                                                                                                                                        "configuration": {
+                                                                                                                                            "className": "error",
+                                                                                                                                            "children": [
+                                                                                                                                                {
+                                                                                                                                                    "name": "Alert",
+                                                                                                                                                    "options": {
+                                                                                                                                                        "configuration": {
+                                                                                                                                                            "variant": "danger",
+                                                                                                                                                            "children": [
+                                                                                                                                                                {
+                                                                                                                                                                    "name": "Alert.Heading",
+                                                                                                                                                                    "options": {
+                                                                                                                                                                        "configuration": {
+                                                                                                                                                                            "children": [
+                                                                                                                                                                                "An error occurred"
+                                                                                                                                                                            ]
+                                                                                                                                                                        }
+                                                                                                                                                                    }
+                                                                                                                                                                },
+                                                                                                                                                                {
+                                                                                                                                                                    "name": "p",
+                                                                                                                                                                    "options": {
+                                                                                                                                                                        "configuration": {
+                                                                                                                                                                            "children": [
+                                                                                                                                                                                {
+                                                                                                                                                                                    "jsonLogic": {
+                                                                                                                                                                                        "var": "props.error.message"
+                                                                                                                                                                                    }
+                                                                                                                                                                                }
+                                                                                                                                                                            ]
+                                                                                                                                                                        }
+                                                                                                                                                                    }
+                                                                                                                                                                }
+                                                                                                                                                            ]
+                                                                                                                                                        }
+                                                                                                                                                    }
+                                                                                                                                                }
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                },
+                                                                                                                {
+                                                                                                                    "name": "Conditional",
+                                                                                                                    "keepExtendedProps": true,
+                                                                                                                    "options": {
+                                                                                                                        "configuration": {
+                                                                                                                            "condition": {
+                                                                                                                                "jsonLogic": {
+                                                                                                                                    "and": [
+                                                                                                                                        {
+                                                                                                                                            "!=": [
+                                                                                                                                                "props.loading",
+                                                                                                                                                true
+                                                                                                                                            ]
+                                                                                                                                        },
+                                                                                                                                        {
+                                                                                                                                            "var": "props.data"
+                                                                                                                                        }
+                                                                                                                                    ]
+                                                                                                                                }
+                                                                                                                            },
+                                                                                                                            "children": [
+                                                                                                                                {
+                                                                                                                                    "name": "div",
+                                                                                                                                    "keepExtendedProps": true,
+                                                                                                                                    "options": {
+                                                                                                                                        "configuration": {
+                                                                                                                                            "className": "data",
+                                                                                                                                            "children": [
+                                                                                                                                                "Name: ",
+                                                                                                                                                {
+                                                                                                                                                    "name": "b",
+                                                                                                                                                    "keepExtendedProps": true,
+                                                                                                                                                    "options": {
+                                                                                                                                                        "configuration": {
+                                                                                                                                                            "children": [
+                                                                                                                                                                {
+                                                                                                                                                                    "jsonLogic": {
+                                                                                                                                                                        "var": "props.data.result.user.name"
+                                                                                                                                                                    }
+                                                                                                                                                                }
+                                                                                                                                                            ]
+                                                                                                                                                        }
+                                                                                                                                                    }
+                                                                                                                                                },
+                                                                                                                                                " and age: ",
+                                                                                                                                                {
+                                                                                                                                                    "name": "em",
+                                                                                                                                                    "keepExtendedProps": true,
+                                                                                                                                                    "options": {
+                                                                                                                                                        "configuration": {
+                                                                                                                                                            "children": [
+                                                                                                                                                                {
+                                                                                                                                                                    "jsonLogic": {
+                                                                                                                                                                        "var": "props.data.result.user.age"
+                                                                                                                                                                    }
+                                                                                                                                                                }
+                                                                                                                                                            ]
+                                                                                                                                                        }
+                                                                                                                                                    }
+                                                                                                                                                },
+                                                                                                                                                "."
+                                                                                                                                            ]
+                                                                                                                                        }
+                                                                                                                                    }
+                                                                                                                                }
+                                                                                                                            ]
+                                                                                                                        }
+                                                                                                                    }
+                                                                                                                }
+                                                                                                            ]
+                                                                                                        }
+                                                                                                    }
+                                                                                                }
+                                                                                            ]
+                                                                                        }
+                                                                                    }
+                                                                                }
+                                                                            ]
+                                                                        }
+                                                                    }
+                                                                }
+                                                            ]
+                                                        }
+                                                    }
+                                                }
+                                            ]
+                                        }
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                }
+            ]
+        }
+    }
+}

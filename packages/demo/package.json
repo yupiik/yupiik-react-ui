@@ -1,0 +1,25 @@
+{
+  "name": "@yupiik/demo",
+  "description": "A sample application using react-bootrap + @yupiik/dynamic module.",
+  "main": "dist/index.js",
+  "mainSrc": "src/index.js",
+  "author": "Yupiik <contact@yupiik.com>",
+  "license": "ISC",
+  "keywords": [
+    "react",
+    "yupiik"
+  ],
+  "scripts": {
+    "clean": "rm -Rf dist",
+    "build": "node build.js",
+    "start": "NODE_ENV=dev DEV_JSONRPC_MOCK=$PWD/jsonrpc.mock.js node build.js"
+  },
+  "devDependencies": {
+    "@yupiik/react-ui-dynamic": "",
+    "@yupiik/react-ui-use-json-rpc": "",
+    "@jsonforms/react": "3.1.0",
+    "@jsonforms/vanilla-renderers": "3.1.0",
+    "react-bootstrap": "^2.9.1",
+    "react-feather": "^2.0.10"
+  }
+}

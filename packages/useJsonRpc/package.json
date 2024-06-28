@@ -1,0 +1,21 @@
+{
+    "name": "@yupiik/react-ui-use-json-rpc",
+    "description": "A simple react hook to integrate with a JSON-RPC backend.",
+    "main": "dist/index.js",
+    "mainSrc": "src/index.js",
+    "author": "Yupiik <contact@yupiik.com>",
+    "license": "ISC",
+    "keywords": [
+      "react",
+      "yupiik",
+      "JSON-RPC"
+    ],
+    "scripts": {
+      "clean": "rm -Rf dist",
+      "build": "node build.js",
+      "test": "jest",
+      "test:watch": "npx jest --watchAll",
+      "test:updateSnapshot": "npx jest --updateSnapshot",
+      "test:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand"
+    }
+  }

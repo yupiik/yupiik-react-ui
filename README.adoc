@@ -1,0 +1,6 @@
+= Yupiik React UI
+
+[source, bash]
+----
+npm i --include-workspace-root
+----
