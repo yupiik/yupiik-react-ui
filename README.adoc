@@ -1,6 +1,19 @@
 = Yupiik React UI
 
+== Build
+
 [source, bash]
 ----
 npm i --include-workspace-root
 ----
+
+== Publish
+
+After login to https://registry.npmjs.org/, go into the package to publish:
+
+[source, bash]
+----
+npm publish --access public
+----
+
+Then the packages are available at https://www.npmjs.com/settings/yupiik/packages
