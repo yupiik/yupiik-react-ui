@@ -86,7 +86,6 @@
                                                                                     "name": "NavLink",
                                                                                     "options": {
                                                                                         "configuration": {
-                                                                                            "activeClassName": "active",
                                                                                             "className": "sidebar-link",
                                                                                             "href": "/home",
                                                                                             "children": [

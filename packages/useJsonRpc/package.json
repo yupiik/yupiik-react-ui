@@ -1,11 +1,11 @@
 {
     "name": "@yupiik/react-ui-use-json-rpc",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "A simple react hook to integrate with a JSON-RPC backend.",
     "main": "dist/index.js",
     "mainSrc": "src/index.js",
-    "author": "Yupiik <contact@yupiik.com>",
-    "license": "ISC",
+    "author": "Yupiik <oss@yupiik.com>",
+    "license": "Apache-2.0",
     "keywords": [
       "react",
       "yupiik",

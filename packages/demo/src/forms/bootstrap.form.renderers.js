@@ -163,8 +163,8 @@ const BootstrapHorizontalLayout = ({ uischema, schema, path, renderers }) => (
 
 const BootstrapVerticalLayout = ({ uischema, schema, path, renderers }) => (
     <div className="form-group">
-        {uischema.elements.map(element => (
-            <div key={element.scope || element.label}>
+        {uischema.elements.map((element, index) => (
+            <div key={element.scope || element.label || index}>
                 <JsonFormsDispatch
                     uischema={element}
                     schema={schema}
