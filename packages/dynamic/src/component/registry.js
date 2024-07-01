@@ -11,7 +11,7 @@ export const simpleComponent = nameOrComponent => ({
     const Comp = nameOrComponent;
     const subComponents = children !== undefined && (Array.isArray(children) ? children : [children])
         .filter(it => it !== undefined)
-        .map(it => {
+        .map((it, index) => {
             // all the trick is there, wrap the children with FromConfiguratonHoc to enable the configuration to propagate properly 
             if (it && typeof it === 'object' && it.options) {
                 if (it.name) { // not wrapped, we tolerate it since it is simpler to write
@@ -21,6 +21,7 @@ export const simpleComponent = nameOrComponent => ({
                     }
                     return (
                         <FromConfiguratonHoc
+                            key={index}
                             {...otherProps}
                             registry={registry}
                             options={it}
@@ -30,7 +31,7 @@ export const simpleComponent = nameOrComponent => ({
                     );
                 }
                 return (
-                    <FromConfiguratonHoc registry={registry} {...it} parentState={state} parentDispatch={dispatch} />
+                    <FromConfiguratonHoc key={index} registry={registry} {...it} parentState={state} parentDispatch={dispatch} />
                 );
             }
             return it;

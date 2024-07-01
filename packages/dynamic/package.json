@@ -1,11 +1,11 @@
 {
   "name": "@yupiik/react-ui-dynamic",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "A simple react based library to help configuring an UI.",
   "main": "dist/index.js",
   "mainSrc": "src/index.js",
-  "author": "Yupiik <contact@yupiik.com>",
-  "license": "ISC",
+  "author": "Yupiik <oss@yupiik.com>",
+  "license": "Apache-2.0",
   "keywords": [
     "react",
     "yupiik"
