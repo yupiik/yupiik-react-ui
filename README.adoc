@@ -1,10 +1,19 @@
 = Yupiik React UI
 
-== Build
+== Install
 
 [source, bash]
 ----
 npm i --include-workspace-root
+----
+
+== Build
+
+Go into each package and run:
+
+[source, bash]
+----
+npm run build
 ----
 
 == Publish
