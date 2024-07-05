@@ -1,6 +1,6 @@
 {
   "name": "@yupiik/react-ui-dynamic",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A simple react based library to help configuring an UI.",
   "main": "dist/index.js",
   "mainSrc": "src/index.js",

@@ -1,6 +1,6 @@
 {
   "name": "@yupiik/react-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Yupiik <oss@yupiik.com>",
   "license": "Apache-2.0",
   "devDependencies": {
