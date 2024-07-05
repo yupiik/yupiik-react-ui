@@ -26,18 +26,18 @@ export const useJsonRpc = ({
                 setLoading(false);
                 return;
             }
-    
+
             if (needsSecurity && !securityContext) {
                 setError('You must be logged to access this page.');
                 setLoading(false);
                 return;
             }
-    
+
             try {
                 setLoading(true);
                 setError(undefined);
                 setData(undefined);
-    
+
                 const headers = {
                     accept: 'application/json',
                     ...(needsSecurity ?
@@ -55,33 +55,34 @@ export const useJsonRpc = ({
                     body: typeof payload === 'string' ? payload : JSON.stringify(payload),
                     ...fetchOptions,
                 };
-    
+
                 const result = await fetch(endpoint, options);
                 if (result.status !== 200) {
                     setError(`Invalid response: HTTP ${result.status}`);
                     return onExit;
                 }
-    
+
                 const json = await result.json();
                 if (Array.isArray(json)) { // let the caller handle the errors for bulk
                     setData(json);
                     return onExit;
                 }
-    
+
                 if (json.error) {
                     setError(json.error);
                     return onExit;
                 }
-    
+
                 setData(json);
             } catch (e) {
                 setError(e);
             } finally {
                 setLoading(false);
             }
-    
+
             return onExit;
         }
+        internal().catch(console.error);
         return onExit;
     }, deps);
 
